@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@95.4,200..900&family=RocknRoll+One&display=swap" rel="stylesheet">
+
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+
+
+    <!-- META TAGS -->
+    <meta name="description" content="Esta es la pagina para contactarse con el vivero">
+    <meta name="keywords" content="Vivero online, Atención al cliente, Soporte de jardinería, Preguntas frecuentes, Redes sociales vivero">
+    <link rel="icon" href="../images/logovivero.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+
+
+            <!-- OG -->
+            <ul>
+                <li><a href="../index.html"><img src="../images/logovivero.jpg" class="logo" alt="Logo"></a></li>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="cuidados.html">TIPS / CUIDADOS</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="ubicacion.html">UBICACIÓN</a></li>
+                <li><a href="contact.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="banner">
+                <div class="banner-fondo">
+                    <h2>CONTACTO</h2>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <form action="submit_contact.php" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+                <p>Escríbenos a este número: <a href="tel:+5491127996935" class="footer-link">+54 9 11 2799-6935</a></p>
+            </div>
+            <div class="footer-image">
+                <a href="https://www.instagram.com/viveroloscoihues/" class="footer-link_web">
+                    <img src="../images/logoig.png"/>
+                </a>
+                <a href="https://www.facebook.com/viverolc" class="footer-link_web"></a>
+                    <img src="../images/logofacebook.png"/>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

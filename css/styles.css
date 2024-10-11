@@ -1,0 +1,404 @@
+@charset "UTF-8";
+body {
+  font-family: "RocknRoll One", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #2C7A62;
+  color: rgba(146, 219, 0, 0.8);
+  padding: 10px 0;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+}
+
+nav ul {
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  text-align: center;
+}
+
+nav ul li a {
+  color: rgba(146, 219, 0, 0.8);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h2 {
+  color: rgba(146, 219, 0, 0.8);
+  text-align: center;
+  font-size: 2.1rem;
+}
+
+h1 {
+  color: #333;
+}
+
+/* HEADER */
+.logo {
+  width: 5%;
+  display: inline;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: rgba(146, 219, 0, 0.8);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* VARIABLES */
+/* PAGINA INICIO  */
+/* GALERIA IMAGENES */
+.galeria__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.galeria {
+  width: 80%;
+  height: 60vh;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10%;
+}
+
+.elem {
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: flex 0.5s ease-in-out;
+}
+
+.elem:hover {
+  flex: 4;
+}
+
+/* TERMINA GALERIA */
+/* SECTION NOSOTROS */
+.container__box {
+  width: 100%;
+  background-color: #e8e8e8;
+  display: flex;
+}
+
+.container__text {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 2% 0;
+}
+
+.container__text p {
+  padding: 0 15%;
+}
+
+/* TERMINA SECTION */
+/* PAGINA CUIDADOS */
+.banner {
+  background-image: url(../images/fondobanner.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-fondo {
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.parrafo {
+  padding: 0 4% 0 4%;
+}
+
+.parrafo h3 {
+  margin-top: 3%;
+}
+
+/* PAGINA PRODUCTOS */
+/* Estilos de la Barra de Búsqueda y Perfil de Usuario */
+.search-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+}
+
+.search-profile input[type=text] {
+  width: 88%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile .profile-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile span {
+  font-weight: bold;
+}
+
+.bannerprod {
+  background-image: url(../images/fondobanner.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 2%;
+}
+
+.bannerprod-fondo {
+  padding: 10px;
+}
+
+/* Estilos del Área Principal */
+.products-header {
+  text-align: center;
+  margin: 20px;
+}
+
+.products-header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #333;
+}
+
+.products-header p {
+  font-size: 1em;
+  color: #666;
+}
+
+.dropdown {
+  padding: 0 46%;
+}
+
+/* Estilos para Tarjetas de Productos */
+.product {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.product-cards {
+  background-color: white;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 25%;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  height: 100%;
+}
+
+.product-image {
+  width: 95%;
+  height: 60%;
+  border-radius: 5px;
+}
+
+.card h2 {
+  margin: 15px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.price {
+  font-size: 1.1em;
+  color: #007BFF;
+}
+
+.reviews {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* PRUEBA MIXINS */
+.button {
+  padding: 10px 20px;
+  background-color: rgba(146, 219, 0, 0.8);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #2C7A62;
+}
+
+/* TERMINA PRUEBA */
+@media (max-width: 768px) {
+  .product-cards {
+    width: 45%;
+  }
+}
+@media (max-width: 517px) {
+  .product-cards {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+/* Estilos para Imágenes */
+img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* PAGINA UBICACION */
+h3, iframe {
+  width: 80%;
+  margin-left: 10%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* PAGINA CONTACTO */
+/* Estilos para Formularios */
+form {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #e8e8e8;
+  margin-bottom: 5%;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type=text],
+form input[type=email],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(146, 219, 0, 0.8);
+  border-radius: 4px;
+}
+
+form input[type=submit] {
+  background: rgba(146, 219, 0, 0.8);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type=submit]:hover {
+  background: #337635;
+}
+
+.contact h2 {
+  color: rgba(146, 219, 0, 0.8);
+  text-align: center;
+  font-size: 2.1rem;
+}
+
+/* Estilos del Pie de Página */
+footer {
+  margin-top: 100px;
+  background: #2C7A62;
+  color: #fff;
+  padding: 40px 0;
+  position: relative;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-text {
+  text-align: left;
+}
+
+.footer-image img {
+  justify-content: center;
+  height: 40px;
+}
+
+.footer-link_web {
+  color: #337635;
+}
+
+.footer-link {
+  color: rgba(146, 219, 0, 0.8);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  .logo {
+    width: 15%;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #e8e8e8;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 10;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  li a:hover, li a.active {
+    background: none;
+    color: rgba(146, 219, 0, 0.8);
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
